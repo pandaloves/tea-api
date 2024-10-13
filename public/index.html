@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/index.css" />
+    <title>tea-api</title>
+  </head>
+  <body>
+    <h1>tea-api</h1>
+
+    To Test:
+    <blockquote>
+      curl
+      <pre>
+curl -X POST http://localhost:3002/api/category -H 'Content-Type: application/json' -d '{"name":"name"}'
+curl -X GET http://localhos:3002/api/category
+curl -X GET http://localhost:3002/api/category/1
+curl -X PUT http://localhost:3002/api/category/1 -H 'Content-Type: application/json' -d '{"name":"name"}'
+curl -X DELETE http://localhost:3002/api/category/1
+    </pre
+      >
+    </blockquote>
+
+    <blockquote>
+      curl
+      <pre>
+curl -X POST http://localhost:3002/api/product -H 'Content-Type: application/json' -d '{"name":"name","image":"src", effect: "effect", type: "type", caffeine: "caffeine", categoryId: "categoryId"}'
+curl -X GET http://localhos:3002/api/product
+curl -X GET http://localhost:3002/api/product/1
+curl -X PUT http://localhost:3002/api/product/1 -H 'Content-Type: application/json' -d '{"name":"name","image":"src", effect: "effect", type: "type", caffeine: "caffeine", categoryId: "categoryId"}'
+curl -X DELETE http://localhost:3002/api/product/1
+    </pre
+      >
+    </blockquote>
+
+    <blockquote>
+      node
+      <pre>
+       npm test # Unit tests
+    </pre
+      >
+    </blockquote>
+
+    <script src="/index.js" />
+  </body>
+</html>
