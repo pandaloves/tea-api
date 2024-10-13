@@ -59,7 +59,6 @@ exports.delete_product = (req, res) => {
       return;
     }
     res.status(200).json({ success: "Deleted the product successfully!" });
-    res.status(204).send();
   } catch (error) {
     console.log(error);
     res.status(500).send("Something went wrong!");
